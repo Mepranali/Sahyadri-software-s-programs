@@ -1,0 +1,23 @@
+p.uppercase{
+    text-transform: uppercase;
+    font-size: 2vmax;
+    background-color: rgb(44, 246, 115);
+    width: max(60%,300px);
+}
+p.lowercase{
+    text-transform: lowercase;
+    /* Applying relative units */
+    font-size: 2em;
+    background-color: palevioletred;
+    width: calc(100% - 800px);
+}
+p.capitalize{
+    text-transform: capitalize;
+    font-size: 100%;
+    background-color: aquamarine;
+    width: min(100%,300px);
+}
+
+/* p.uppercase{
+    text-transform: inherit;
+} */

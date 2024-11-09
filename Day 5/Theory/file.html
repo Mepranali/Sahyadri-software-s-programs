@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style type=text/css>
+        body{
+            background-color:aqua;
+            text-align: center;
+            align-items: center;
+            background-image:url("officephoto.jpg");
+            background-repeat:repeat-x;
+            background-size: cover;
+            background-position:center;
+            background-attachment: scroll;
+        }
+        h1{
+            color:green;
+            /* p{
+                color:aquamarine;
+            } */
+        }
+        .reg{
+            background-color: white;
+        }
+      #fname,#lname,#email,#pwd{
+            background-color:bisque;
+        }
+        p.form{
+            color:red;
+            /* background-color: aqua; */
+        }
+        .Register{
+            border-style: double;
+            margin-top:2%;
+            margin-left: 30%;
+            margin-right: 30%;
+            padding-top: 5%;
+            padding-bottom: 3px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+    <!-- <h1>CSS</h1>
+    <p style="color: blue; font:bold;">Css colors are specified using predefined color names,
+        or RGB,HEX,HSL,RGBA,HSLA values.
+    </p> -->
+</div>
+    <h1 class="reg">Registration Form</h1>
+    <form class="Register">
+        <p class="form">All details are mandatory...</p>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd"><br><br>
+        <input type="submit" value="Register">
+        </form>
+</body>
+</html>

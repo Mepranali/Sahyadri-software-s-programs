@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="p-20"> 
+    <div class="w-24 bg-teal-200">24</div>
+    <div class="w-48 bg-teal-200">48</div>
+    <div class="w-64 bg-teal-200">64</div>
+    <div class="w-80 bg-teal-200">80</div>
+    <div class="w-96 bg-teal-200">96</div>
+    <br>
+    <h1>percentage width</h1>
+    <div class="flex">
+        <div class="w-1/2 bg-violet-500" >1/2</div>&nbsp;&nbsp;
+    <div class="w-1/2 bg-violet-500" >1/2</div>
+    </div>
+    <br>
+    <div class="flex">
+        <div class="w-2/5 bg-violet-500" >2/5</div>&nbsp;&nbsp;
+    <div class="w-3/5 bg-violet-500" >3/5</div>
+    </div>
+
+    <br>
+    <div class="flex">
+    <div class="w-1/3 bg-violet-500" >1/3</div>&nbsp;&nbsp;
+    <div class="w-2/3 bg-violet-500" >2/3</div>
+    </div>
+    <br>
+    <div class="w-full bg-violet-600">full</div>
+    <br>
+    <b>Max width</b>
+    <div>
+        <div class="w-full max-w-96 bg-pink-500 text-white">max-w-96</div> <br>
+        <div class="w-full max-w-80 bg-pink-500 text-white">max-w-80</div> <br>
+        <div class="w-full max-w-64 bg-pink-500 text-white">max-w-64</div> <br>
+        <div class="w-full max-w-40 bg-pink-500 text-white">max-w-40</div> <br>
+        <div class="w-full max-w-32 bg-pink-500 text-white">max-w-32</div> <br>
+    </div>
+<br>
+<hr>
+<br>
+<h1>Position</h1>
+<div class="static bg-red-500">
+    <p>Static parent</p>
+    
+  </div>
+  <br>
+  <div class="relative bg-blue-100">
+    <p>relative</p>
+    <div class="absolute bg-slate-600">
+        <p>Absolute</p>
+    </div>
+  </div>
+  <br>
+  <div class="fixed bg-blue-400">Fixed position </div>
+  <br>
+  <div class="sticky bg-blue-400">Sticky</div>
+  <br>
+  <h1 class="mb-3">Display</h1>
+    <div class="bg-indigo-100 p-10 mb-10 w-[600px]">
+      <span class="inline"
+        >1. This is display inline and will wrap normally</span
+      >
+      (this gebrish will added as an inline text)
+      <span class="inline-block"
+        >2. This is display inline-block and will not extend beyond it's
+        parent</span
+      >
+      <span class="block"
+        >3. This is display block and will move to it's own line</span
+      >
+      <span class="hidden"
+        >This is display none and will not display at all</span
+      >
+    </div>
+<br>
+<div class="grid gap-4 grid-cols-3 grid-rows-3">
+    <!-- ... -->
+     <p class="bg-blue-400">1</p>
+  </div>
+  <br>
+  <h1>Background-image</h1>
+  <div class="h-14 bg-gradient-to-r from-cyan-500 to-blue-500"></div><br>
+<div class="h-14 bg-gradient-to-tr from-sky-500 to-indigo-500"></div><br>
+<div class="h-14 bg-gradient-to-t from-violet-500 to-fuchsia-500"></div><br>
+<div class="h-14 bg-gradient-to-b from-purple-500 to-pink-500"></div><br>
+<div class="h-15 bg-gradient-to-bl from-purple-500 to-pink-500"></div><br>
+</body>
+</html>
