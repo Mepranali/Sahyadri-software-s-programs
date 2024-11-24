@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body class="bg-gray-100">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <div class="sidebar h-full">
+          <iframe 
+              src="../components/sidebar.html" 
+              frameborder="0" 
+              class="sidebar-iframe w-64 h-full">
+          </iframe>
+      </div>
+       
+
+        <!-- Main Content -->
+        <div class="flex-1 flex flex-col">
+            <!-- Header -->
+            <div class="flex items-center justify-between bg-gray-100  p-4">
+                <h1 class="text-lg font-bold">Welcome Admin!</h1>
+                <div class="flex items-center space-x-4">
+                  
+                    <td class="px-4 py-2  text-center">
+                
+                      <a href="#notif" class="inline-block">
+                          <img src="../assets/images/Notifications.jpg" alt="Edit" class="h-5 w-5 hover:opacity-80 w-7 h-7 ml-1">
+                        </a>
+                       
+                        <a href="#delete" class="inline-block ml-2">
+                          <img src="../assets/images/Settings.jpg" alt="Delete" class="h-5 w-5 hover:opacity-80 w-7 h-7 ml-1">
+                        </a>
+                    <p>Username</p><img src="../assets/images/admin.jpg" alt="Profile" class="rounded-full w-8 h-8">
+                </div>
+            </div>
+            
+            <!-- Membership Card -->
+            <div class="p-6">
+                <div class="bg-white p-0 rounded   table-auto border-collapse border border-gray-400">
+                    <div class="flex justify-between items-center p-6  border border-gray-400">
+                        <h3 class="text-xl font-semibold ">Membership</h3>
+                        <div class="flex space-x-4">
+                            <input type="text" placeholder="Search Membership" class="border p-2 rounded-md">
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded-md">Add Membership +</button>
+      
+                        </div>
+                        
+                    </div>
+
+                    <!-- Membership Table -->
+                    <div class="mt-0">
+                        <table class="w-full  ">
+                            <thead >
+                                <tr class=" w-full table-auto bg-gray-100 text-left">
+                                    <th class="  p-6">Sr. No</th>
+                                    <th class="  p-6">Membership Name</th>
+                                    <th class="  p-6">Description</th>
+                                    <th class="  p-6">Amount</th>
+                                    <th class="  p-6">Membership Period</th>
+                                    <th class="  p-6">Installment Period</th>
+                                    <th class="  p-6">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+            <tr class="hover:bg-gray-100">
+                <td class="px-4 py-8  text-center">1</td>
+                <td class="px-4 py-8 ">Basic Membership</td>
+                <td class="px-4 py-8  text-sm max-w-xs overflow-hidden text-ellipsis">Offers access to standard gym facilities like cardio and weight equipment during regular hours. Ideal for individuals seeking general fitness without additional perks.</td>
+                <td class="px-4 py-8  text-center">1000/-</td>
+                <td class="px-4 py-8 text-center">30 Days</td>
+                <td class="px-4 py-8 text-center">1 month</td>
+                <td class="px-4 py-8  text-center">
+                
+                    <a href="#edit" class="inline-block">
+                        <img src="../assets/images/edit.jpg" alt="Edit" class="h-5 w-5 hover:opacity-80">
+                      </a>
+                      <!-- Delete Icon -->
+                      <a href="#delete" class="inline-block ml-2">
+                        <img src="../assets/images/delete.jpg" alt="Delete" class="h-5 w-5 hover:opacity-80">
+                      </a>
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-100">
+                <td class="px-4 py-2  text-center">1</td>
+                <td class="px-4 py-2 ">Basic Membership</td>
+                <td class="px-2 py-2  text-sm max-w-xs overflow-hidden text-ellipsis">Offers access to standard gym facilities like cardio and weight equipment during regular hours. Ideal for individuals seeking general fitness without additional perks.</td>
+                <td class="px-4 py-2  text-center">1000/-</td>
+                <td class="px-4 py-2  text-center">30 Days</td>
+                <td class="px-4 py-2  text-center">1 month</td>
+                <td class="px-4 py-2  text-center">
+                
+                  <a href="#edit" class="inline-block">
+                    <img src="../assets/images/edit.jpg" alt="Edit" class="h-5 w-5 hover:opacity-80">
+                  </a>
+                 
+                  <a href="#delete" class="inline-block ml-2">
+                    <img src="../assets/images/delete.jpg" alt="Delete" class="h-5 w-5 hover:opacity-80">
+                  </a>
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-100">
+                <td class="px-4 py-2  text-center">1</td>
+                <td class="px-4 py-2 ">Basic Membership</td>
+                <td class="px-2 py-2  text-sm max-w-xs overflow-hidden text-ellipsis">Offers access to standard gym facilities like cardio and weight equipment during regular hours. Ideal for individuals seeking general fitness without additional perks.</td>
+                <td class="px-4 py-2  text-center">1000/-</td>
+                <td class="px-4 py-2  text-center">30 Days</td>
+                <td class="px-4 py-2  text-center">1 month</td>
+                <td class="px-4 py-2  text-center">
+                
+                  <a href="#edit" class="inline-block">
+                    <img src="../assets/images/edit.jpg" alt="Edit" class="h-5 w-5 hover:opacity-80">
+                  </a>
+                 
+                  <a href="#delete" class="inline-block ml-2">
+                    <img src="../assets/images/delete.jpg" alt="Delete" class="h-5 w-5 hover:opacity-80">
+                  </a>
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-100">
+                <td class="px-4 py-2  text-center">1</td>
+                <td class="px-4 py-2 ">Basic Membership</td>
+                <td class="px-2 py-2  text-sm max-w-xs overflow-hidden text-ellipsis">Offers access to standard gym facilities like cardio and weight equipment during regular hours. Ideal for individuals seeking general fitness without additional perks.</td>
+                <td class="px-4 py-2  text-center">1000/-</td>
+                <td class="px-4 py-2  text-center">30 Days</td>
+                <td class="px-4 py-2  text-center">1 month</td>
+                <td class="px-4 py-2  text-center">
+                
+                  <a href="#edit" class="inline-block">
+                    <img src="../assets/images/edit.jpg" alt="Edit" class="h-5 w-5 hover:opacity-80">
+                  </a>
+                 
+                  <a href="#delete" class="inline-block ml-2">
+                    <img src="../assets/images/delete.jpg" alt="Delete" class="h-5 w-5 hover:opacity-80">
+                  </a>
+                </td>
+              </tr>
+              
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+      // Fetch and load the sidebar HTML dynamically
+      fetch('Sidebar2.html')
+          .then(response => response.text())
+          .then(data => {
+              document.getElementById('sidebar').innerHTML = data;
+          })
+          .catch(error => console.error('Error loading sidebar:', error));
+  </script>
+</body>
+</html>

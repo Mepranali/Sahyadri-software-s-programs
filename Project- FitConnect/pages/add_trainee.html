@@ -13,8 +13,22 @@
     body {
       font-family: Arial, sans-serif;
     }
+    .container {
+    display: flex;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 290px;
+  }
+  
+  .sidebar-iframe {
+    width: 100%;
+    height: 100vh;
+    border: none;
+  }
     .main-container {
-      margin-left: 250px;
+      flex: 1;
       padding: 20px;
     }
     .header {
@@ -75,15 +89,24 @@
   </style>
 </head>
 <body>
+  <div class="container">
+    <!-- Sidebar Section -->
+    <div class="sidebar">
+    
+      <iframe src="../components/sidebar.html" frameborder="0" class="sidebar-iframe"></iframe>
+    </div>
   <div class="main-container">
+    
     <div class="header">
       <h1>Welcome Admin!</h1>
       <div class="profile">
-        <img src="profile.png" alt="User" style="width: 40px; height: 40px; border-radius: 50%;">
+        <img src="../assets/images/admin.jpg" alt="User" style="width: 40px; height: 40px; border-radius: 50%;">
         <span>Username</span>
       </div>
     </div>
+    
     <div class="form-container">
+      
       <h2>Add Trainee</h2>
       <form>
         <div class="form-group">
@@ -145,5 +168,5 @@
       </form>
     </div>
   </div>
-</body>
+</div></body>
 </html>
