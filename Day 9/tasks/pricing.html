@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Pricing Table</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <section class="container mx-auto px-4 py-12">
+        <h1 class="text-4xl font-bold text-center text-gray-800 mb-8">Pricing Plans</h1>
+
+        <!-- Responsive Pricing Table -->
+        <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <!-- Pricing Card -->
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Basic Plan</h2>
+                <p class="text-gray-600 mb-6">Perfect for individuals.</p>
+                <div class="text-4xl font-bold text-gray-800 mb-6">$19<span class="text-lg">/month</span></div>
+                <ul class="text-gray-600 mb-6 space-y-2">
+                    <li>✔ 10 Projects</li>
+                    <li>✔ Basic Support</li>
+                    <li>✔ 5 Team Members</li>
+                </ul>
+                <button class="w-full px-4 py-2 bg-violet-600 text-white font-medium rounded hover:bg-blue-700">
+                    Get Started
+                </button>
+            </div>
+
+            <!-- Pricing Card -->
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Standard Plan</h2>
+                <p class="text-gray-600 mb-6">Ideal for small teams.</p>
+                <div class="text-4xl font-bold text-gray-800 mb-6">$49<span class="text-lg">/month</span></div>
+                <ul class="text-gray-600 mb-6 space-y-2">
+                    <li>✔ 50 Projects</li>
+                    <li>✔ Priority Support</li>
+                    <li>✔ 15 Team Members</li>
+                </ul>
+                <button class="w-full px-4 py-2 bg-violet-600 text-white font-medium rounded hover:bg-blue-700">
+                    Get Started
+                </button>
+            </div>
+
+            <!-- Pricing Card -->
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Premium Plan</h2>
+                <p class="text-gray-600 mb-6">Best for enterprises.</p>
+                <div class="text-4xl font-bold text-gray-800 mb-6">$99<span class="text-lg">/month</span></div>
+                <ul class="text-gray-600 mb-6 space-y-2">
+                    <li>✔ Unlimited Projects</li>
+                    <li>✔ Dedicated Support</li>
+                    <li>✔ Unlimited Team Members</li>
+                </ul>
+                <button class="w-full px-4 py-2 bg-violet-600 text-white font-medium rounded hover:bg-blue-700">
+                    Get Started
+                </button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

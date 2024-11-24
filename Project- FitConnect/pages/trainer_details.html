@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trainer Details</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+    .details-container {
+      background: #fff;
+      width: 80%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+    }
+    .header h1 {
+      font-size: 24px;
+      color: #333;
+    }
+    .header .search-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .header input[type="text"] {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 200px;
+    }
+    .content {
+      display: flex;
+      gap: 20px;
+    }
+    .personal-details {
+      flex: 2;
+    }
+    .contact-details {
+      flex: 1;
+    }
+    .profile-photo {
+      text-align: center;
+    }
+    .profile-photo img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    .personal-details h3,
+    .contact-details h3 {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    .personal-details p,
+    .contact-details p {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 5px;
+    }
+    .about {
+      margin-top: 20px;
+    }
+    .about p {
+      font-size: 14px;
+      color: #444;
+      line-height: 1.6;
+    }
+    .footer {
+      text-align: right;
+    }
+    .footer button {
+      padding: 10px 20px;
+      background-color: #1e90ff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .footer button:hover {
+      background-color: #1c7ed6;
+    }
+  </style>
+</head>
+<body>
+  <div class="details-container">
+    <div class="sidebar">
+    
+      <iframe src="../components/sidebar.html" frameborder="0" class="sidebar-iframe"></iframe>
+    </div>
+    <!-- Header Section -->
+    <div class="header">
+      <h1>Welcome Admin!</h1>
+      <div class="search-bar">
+        <input type="text" placeholder="Search Staff name">
+        <button>🔍</button>
+      </div>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+      <!-- Personal Details -->
+      <div class="personal-details">
+        <div class="profile-photo">
+          <img src="https://via.placeholder.com/100" alt="Trainer Photo">
+          <h3>Staff Full Name</h3>
+          <p>Yoga Trainer</p>
+        </div>
+        <div class="about">
+          <h3>About</h3>
+          <p>
+            She is a certified yoga instructor with over 2 years of experience teaching 
+            a variety of yoga styles, including Vinyasa, Hatha, and Yin yoga. 
+            She specializes in creating inclusive, beginner-friendly classes 
+            while also offering advanced poses for seasoned practitioners. 
+            Her approach combines mindfulness, breath control, and strength-building techniques.
+          </p>
+        </div>
+        <p><strong>Date of Birth:</strong> September 24, 1995</p>
+      </div>
+
+      <!-- Contact Details -->
+      <div class="contact-details">
+        <h3>Contact Details</h3>
+        <p><strong>Email:</strong> abc@gmail.com</p>
+        <p><strong>Contact No.:</strong> 1234567890</p>
+        <p><strong>Address:</strong> 123 Harmony Lane, Suite 4B<br>Melodyville, State 56789<br>Country</p>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+      <button>Back to Staff/Trainers</button>
+    </div>
+  </div>
+</body>
+</html>

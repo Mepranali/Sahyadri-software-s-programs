@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script> 
+</head>
+<body>
+   <h1>Flex</h1> 
+   <div class="flex justify-around">
+    <li class="bg-teal-200 m-5 p-5" >01</li>
+    <li class="bg-teal-200 m-5 p-5" >01</li>
+    <li class="bg-teal-300 m-5 p-5" >03</li>
+    <li class="bg-teal-400 m-5 p-5" >04</li>
+    <li class="bg-teal-200 m-5 p-5" >05</li>
+
+   </div>
+   <h1>Flex direction</h1>
+
+   <h1>Flex Shrink</h1>
+   <div class="border m-10">
+    <div class="flex w-100">
+      <!-- flex-none  It prevents item from growing and shrinking -->
+      <div class="p-5 m-3 w-64 bg-teal-100 flex-none">01</div>
+      <!-- Allow items to shrink but not grow, taking its initial size -->
+      <div class="p-5 m-3 w-64 bg-teal-100 flex-initial">02</div>
+      <!-- Allow item to grow and shrink as needed ignoring its initial size -->
+      <div class="p-5 m-3 w-64 bg-teal-100 flex-auto">03</div>
+      <br>
+   <h1>Flex ordering</h1>
+   </div>
+   </div>
+    <br>
+    <h1>Flex Grow</h1>
+    <div class="border m-10">
+        <div class="flex w-100">
+          <!-- flex-none  It prevents item from growing and shrinking -->
+          <div class="p-5 m-3 w-64 bg-teal-100 flex-none">01</div>
+          <!-- Allow items to shrink but not grow, taking its initial size -->
+          <div class="p-5 m-3 w-64 bg-teal-100 flex-initial">02</div>
+          <!-- Allow item to grow and shrink as needed ignoring its initial size -->
+          <div class="p-5 m-3 w-64 bg-teal-100 flex-auto">03</div>
+          <div class="p-5 m-3 w-64 bg-teal-100 flex-1">04</div>
+          <div class="p-5 m-3 w-64 bg-teal-100 ">05</div>
+          <div class="p-5 m-3 w-64 bg-teal-100 ">06</div>
+          <div class="p-5 m-3 w-64 bg-teal-100 ">07</div>
+          </div>
+          </div>
+      
+          
+          
+  <h1>grid</h1>
+  <div class="w-100 grid grid-cols-4 grid-rows-3 gap-4">
+    <div class="p-10 bg-teal-200">01</div>
+    <div class="p-10 bg-teal-200">01</div>
+    <div class="p-10 bg-teal-200">01</div>
+    <div class="p-10 bg-teal-200">01</div>
+    <div class="p-10 bg-teal-200">01</div>
+    <div class="p-10 bg-teal-200">01</div>
+  </div>
+  <div class="w-100 grid grid-cols-3 grid-rows-4 gap-4 ">
+      <div class="p-10 bg-teal-200">01</div>
+      <div class="p-10 bg-teal-200">02</div>
+      <div class="p-10 bg-teal-200">03</div>
+      <div class="p-10 bg-teal-200">04</div>
+      <div class="p-10 bg-teal-200">05</div>
+      <div class="p-10 bg-teal-200">06</div>
+      <div class="p-10 bg-teal-200">07</div>
+      <div class="p-10 bg-teal-200">08</div>
+      <div class="p-10 bg-teal-200">09</div>
+      <div class="p-10 bg-teal-200">10</div>
+      <div class="p-10 bg-teal-200">11</div>
+      <div class="p-10 bg-teal-200">12</div>
+    </div>
+<br>
+
+<h1>Col and Row Span</h1>
+    <div class="w-100 grid grid-cols-3 grid-rows-4 gap-4 ">
+      <div class="p-10 bg-teal-200 col-span-2 row-span-2">01</div>
+      <div class="p-10 bg-teal-200">02</div>
+      <div class="p-10 bg-teal-200">03</div>
+      <div class="p-10 bg-teal-200 col-span-2">04</div>
+      <div class="p-10 bg-teal-200">05</div>
+      <div class="p-10 bg-teal-200">06</div>
+      <div class="p-10 bg-teal-200">07</div>
+      <div class="p-10 bg-teal-200">08</div>
+            <div class="p-10 bg-teal-200 col-span-3">09</div>
+      <div class="p-10 bg-teal-200">10</div>
+      <div class="p-10 bg-teal-200">11</div>
+      <div class="p-10 bg-teal-200">12</div>
+    </div>
+<br>
+<hr>
+    <button class="ml-5 p-5 bg-blue-800 transition hover:bg-teal-800 ease-in-out delay-15 text-white">button transition</button>
+    <!-- Animation -->
+      <button class="ml-5 p-5 bg-blue-800 transition hover:bg-teal-800 ease-in-out delay-15 duration-100 scale text-white">transition</button>
+ <!-- No Transition -->
+ <button class="p-5 text-white bg-blue-500 hover:bg-blue-700">Click me</button>
+ <!-- Transition -->
+ <!-- 1. https://tailwindcss.com/docs/transition-property -->
+ <!-- 2. https://tailwindcss.com/docs/transition-duration -->
+ <!-- 3. https://tailwindcss.com/docs/transition-timing-function -->
+ <!-- 4. https://tailwindcss.com/docs/transition-delay -->
+ <!-- 5. https://tailwindcss.com/docs/animation -->
+
+ <button class="ml-5 p-5 bg-blue-500 transition hover:bg-teal-500 ease-in-out delay-150 scale-150 text-white">With transition</button>
+
+ <!-- Transition & Transform -->
+ <button class="ml-5 p-5 bg-blue-500 transition hover:bg-teal-500 ease-in-out delay-150 duration-1000 text-white hover:translate-y-1 hover:scale-110 rotate-45 ">Transformation</button>
+
+ <!-- Animation -->
+  <div class="flex justiy-center">
+   <div class="p-20 ml-20 mt-20 w-20 bg-teal-200 animate-spin">Spin</div>
+   <div class="p-20 ml-20 mt-20 w-20 bg-teal-200 animate-ping">Ping</div>
+   <div class="p-20 ml-20 mt-20 w-20 bg-teal-200 animate-pulse">Pulse</div>
+   <div class="p-20 ml-20 mt-20 w-20 bg-teal-200 animate-bounce">Bounce</div>
+
+  </div>
+
+    </body>
+</html>

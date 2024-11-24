@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff/Trainers</title>
+  <link rel="stylesheet" href="../css/trainers.css">
+ 
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar Section -->
+    <div class="sidebar">
+      <!-- Sidebar Component -->
+      <iframe src="../components/Sidebar2.html" frameborder="0" class="sidebar-iframe"></iframe>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <header class="header">
+        <h1>Welcome Admin!</h1>
+        <div class="header-actions">
+          <input type="text" class="search-bar" placeholder="Search Staff name">
+          <button class="add-button">+ Add Staff/Trainer</button>
+          <div class="profile">
+            <img src="../assets/images/admin.jpg" alt="User Profile" class="profile-img">
+            <span class="username">Username</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Staff/Trainers Table Section -->
+      <div class="trainers-section">
+        <h3>Staff/Trainers</h3>
+        <table class="trainers-table">
+          <thead>
+            <tr>
+              <th>Photo</th>
+              <th>Staff Name</th>
+              <th>Contact No.</th>
+              <th>Profession</th>
+              <th>Experience</th>
+              <th>Email Id</th>
+              <th>Batch</th>
+              <th>Details</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Repeat the following row for each staff -->
+            <tr>
+              <td><img src="../assets/images/trainer.png" alt="Trainer Photo" class="trainer-photo"></td>
+              <td>Staff Full Name</td>
+              <td>1234567890</td>
+              <td>Yoga</td>
+              <td>2 Yrs</td>
+              <td>abc@gmail.com</td>
+              <td>Morning</td>
+              <td><a href="#" class="view-details">View Details</a></td>
+              <td>
+                <button class="edit-button">✏️</button>
+                <button class="delete-button">🗑️</button>
+              </td>
+            </tr>
+            <tr>
+                <td><img src="../assets/images/trainer.png" alt="Trainer Photo" class="trainer-photo"></td>
+                <td>Staff Full Name</td>
+                <td>1234567890</td>
+                <td>Yoga</td>
+                <td>2 Yrs</td>
+                <td>abc@gmail.com</td>
+                <td>Morning</td>
+                <td><a href="#" class="view-details">View Details</a></td>
+                <td>
+                  <button class="edit-button">✏️</button>
+                  <button class="delete-button">🗑️</button>
+                </td>
+              </tr>
+              <tr>
+                <td><img src="../assets/images/trainer.png" alt="Trainer Photo" class="trainer-photo"></td>
+                <td>Staff Full Name</td>
+                <td>1234567890</td>
+                <td>Yoga</td>
+                <td>2 Yrs</td>
+                <td>abc@gmail.com</td>
+                <td>Morning</td>
+                <td><a href="#" class="view-details">View Details</a></td>
+                <td>
+                  <button class="edit-button">✏️</button>
+                  <button class="delete-button">🗑️</button>
+                </td>
+              </tr>
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
