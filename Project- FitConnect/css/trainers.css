@@ -107,9 +107,9 @@ body {
   }
   
   .view-details {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
+  
+   text-decoration: underline;
+   
   }
   
   .edit-button,

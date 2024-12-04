@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <style>
+        /* Embedded CSS for Header */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6; /* Light background */
+        }
+
+        .header {
+            background-color: #f3f4f6; /* Light gray background */
+            padding: 1rem;
+           
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           
+        }
+
+        .welcome-text {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #333; /* Darker text */
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem; /* Space between icons and profile */
+        }
+
+        .icon {
+            width: 26px;
+            height: 26px;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+        }
+
+        .icon:hover {
+            opacity: 0.7; /* Hover effect */
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem; 
+        }
+
+        .username {
+            font-size: 0.9rem;
+            color: black; /* Muted text */
+        }
+
+        .profile-image {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%; /* Make circular */
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <!-- Welcome Text -->
+            <h1 class="welcome-text">Welcome Admin!</h1>
+        </div>
+        <div class="header-right">
+            <!-- Notification Icon -->
+            <a href="#notifications">
+                <svg width="30" height="30" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.4997 32.0833C19.1038 32.0833 20.4163 30.7708 20.4163 29.1666H14.583C14.583 30.7708 15.8809 32.0833 17.4997 32.0833ZM26.2497 23.3333V16.0416C26.2497 11.5645 23.858 7.81659 19.6872 6.82492V5.83325C19.6872 4.62284 18.7101 3.64575 17.4997 3.64575C16.2893 3.64575 15.3122 4.62284 15.3122 5.83325V6.82492C11.1268 7.81659 8.74967 11.5499 8.74967 16.0416V23.3333L5.83301 26.2499V27.7083H29.1663V26.2499L26.2497 23.3333Z" fill="#666666"/>
+                    </svg>
+                    
+            </a>
+            <!-- Settings Icon -->
+            <a href="#settings">
+                <svg width="30" height="30" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_97_491)">
+                    <path d="M27.9132 18.8708C27.9716 18.4333 28.0007 17.9813 28.0007 17.5C28.0007 17.0333 27.9716 16.5667 27.8986 16.1292L30.8591 13.825C31.1216 13.6208 31.1945 13.2271 31.0341 12.9354L28.2341 8.09375C28.0591 7.77292 27.6945 7.67083 27.3736 7.77292L23.8882 9.17292C23.1591 8.61875 22.3861 8.15208 21.5257 7.80208L21.0007 4.09792C20.9424 3.74792 20.6507 3.5 20.3007 3.5H14.7007C14.3507 3.5 14.0736 3.74792 14.0153 4.09792L13.4903 7.80208C12.6299 8.15208 11.8424 8.63333 11.1278 9.17292L7.6424 7.77292C7.32156 7.65625 6.95698 7.77292 6.78198 8.09375L3.99656 12.9354C3.82156 13.2417 3.8799 13.6208 4.17156 13.825L7.13198 16.1292C7.05906 16.5667 7.00073 17.0479 7.00073 17.5C7.00073 17.9521 7.0299 18.4333 7.10281 18.8708L4.1424 21.175C3.8799 21.3792 3.80698 21.7729 3.9674 22.0646L6.7674 26.9063C6.9424 27.2271 7.30698 27.3292 7.62781 27.2271L11.1132 25.8271C11.8424 26.3813 12.6153 26.8479 13.4757 27.1979L14.0007 30.9021C14.0736 31.2521 14.3507 31.5 14.7007 31.5H20.3007C20.6507 31.5 20.9424 31.2521 20.9861 30.9021L21.5111 27.1979C22.3716 26.8479 23.1591 26.3813 23.8736 25.8271L27.3591 27.2271C27.6799 27.3438 28.0445 27.2271 28.2195 26.9063L31.0195 22.0646C31.1945 21.7437 31.1216 21.3792 30.8445 21.175L27.9132 18.8708ZM17.5007 22.75C14.6132 22.75 12.2507 20.3875 12.2507 17.5C12.2507 14.6125 14.6132 12.25 17.5007 12.25C20.3882 12.25 22.7507 14.6125 22.7507 17.5C22.7507 20.3875 20.3882 22.75 17.5007 22.75Z" fill="#666666"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_97_491">
+                    <rect width="35" height="35" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                    
+            </a>
+            <!-- Username and Profile -->
+            <div class="profile">
+                <span class="username">Username</span>
+                <img src="../assets/images/admin.jpg" alt="Profile" class="profile-image">
+            </div>
+        </div>
+    </header>
+</body>
+</html>

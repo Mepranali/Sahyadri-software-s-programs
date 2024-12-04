@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fitness Center Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="h-screen bg-gray-600">
@@ -15,7 +16,7 @@
     
     <!-- Logo -->
     <div class="absolute top-10 left-0 right-0 flex justify-center">
-      <img src="assets/images/fitnesslogo.png" alt="Fitness Center Logo" class="w-16 sm:w-24 md:w-28 lg:w-32">
+      <img src="assets/images/fitnesslogo.png" alt="Fitness Center Logo" class="w-64 sm:w-24 md:w-28 lg:w-32">
     </div>
     
     <!-- Login Container -->
@@ -36,8 +37,12 @@
             <label for="password" class="block text-gray-300 text-sm font-bold mb-2">Password</label>
             <div class="relative">
               <input type="password" id="password" placeholder="Enter Password" 
-                class="w-full p-3 bg-white-600 text-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-yellow-500">
-              <button type="button" class="absolute inset-y-0 right-3 text-gray-400 hover:text-gray-200">👁</button>
+                class="w-full p-3 bg-white-600 text-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-grey-400">
+              <button type="button" class="absolute inset-y-0 right-3 text-gray-400 hover:text-gray-200">
+                <span class="password-toggle-icon"><i class="fas fa-eye"></i></span>
+        
+                <a href="https://www.flaticon.com/free-icons/eye" title="eye icons"> </a>
+              </button>
             </div>
           </div>
           

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trainer Details</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
     * {
       margin: 0;
@@ -14,40 +15,40 @@
       font-family: Arial, sans-serif;
       background-color: #f4f4f4;
       display: flex;
-      justify-content: center;
+    }
+    .sidebar {
+  
+      width: 294px;
+      color: #fff;
+      height: 100vh; /* Full height */
+      position: fixed; /* Keeps it fixed on the left */
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+     
+    }
+    .sidebar iframe {
+      width: 100%;
+      height: 100vh;
+    border: none;
+    }
+    .main-content {
+      margin-left: 20%; /* Matches the sidebar width */
+      width: 80%; /* Remaining space for the main content */
       padding: 20px;
     }
     .details-container {
       background: #fff;
-      width: 80%;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       padding: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
     }
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 10px;
-    }
-    .header h1 {
-      font-size: 24px;
-      color: #333;
-    }
-    .header .search-bar {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .header input[type="text"] {
-      padding: 8px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      width: 200px;
+    .header iframe {
+      width: 100%;
+      height: 80px;
+      border: none;
+      margin-bottom: 20px;
     }
     .content {
       display: flex;
@@ -91,6 +92,7 @@
     }
     .footer {
       text-align: right;
+      margin-top: 20px;
     }
     .footer button {
       padding: 10px 20px;
@@ -106,54 +108,64 @@
   </style>
 </head>
 <body>
-  <div class="details-container">
-    <div class="sidebar">
-    
-      <iframe src="../components/sidebar.html" frameborder="0" class="sidebar-iframe"></iframe>
-    </div>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <iframe src="../components/sidebar.html"></iframe>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
     <!-- Header Section -->
     <div class="header">
-      <h1>Welcome Admin!</h1>
-      <div class="search-bar">
-        <input type="text" placeholder="Search Staff name">
-        <button>🔍</button>
-      </div>
+      <iframe src="../components/header.html" class="w-full h-full" scrolling="no"></iframe>
     </div>
+    <div class="p-4">
+      <div class="bg-white p-0 rounded   table-auto border-collapse border border-gray-400">
+          <div class="flex justify-between items-center p-4  border border-gray-400">
+              <h3 class="text-xl font-semibold">View details</h3>
+              <div class="flex space-x-4">
+                  <input type="text" placeholder="Search Staff name" class="border p-2 rounded-md">
+                  </div>
+                  </div>
+    <!-- Details Container -->
+    <div class="details-container">
+     
+      <!-- Content Section -->
+      <div class="content">
+        <!-- Personal Details -->
+        <div class="personal-details">
+          <p>Personal Details</p>
+          <br>
+          <div class="profile-photo">
+            <img src="../assets/images/trainer.png" alt="Trainer Photo">
+            <h3 class="font-bold mt-2">Staff Full Name</h3>
+            <p>Yoga Trainer</p>
+          </div>
+          <div class="about">
+            <h3>About</h3>
+            <p>
+              She is a certified yoga instructor with over 2 years of experience teaching 
+              a variety of yoga styles, including Vinyasa, Hatha, and Yin yoga. 
+              She specializes in creating inclusive, beginner-friendly classes 
+              while also offering advanced poses for seasoned practitioners. 
+              Her approach combines mindfulness, breath control, and strength-building techniques.
+            </p>
+          </div>
+          <br>
 
-    <!-- Content Section -->
-    <div class="content">
-      <!-- Personal Details -->
-      <div class="personal-details">
-        <div class="profile-photo">
-          <img src="https://via.placeholder.com/100" alt="Trainer Photo">
-          <h3>Staff Full Name</h3>
-          <p>Yoga Trainer</p>
+          <p><strong>Date of Birth:</strong> <br>September 24, 1995</p>
         </div>
-        <div class="about">
-          <h3>About</h3>
-          <p>
-            She is a certified yoga instructor with over 2 years of experience teaching 
-            a variety of yoga styles, including Vinyasa, Hatha, and Yin yoga. 
-            She specializes in creating inclusive, beginner-friendly classes 
-            while also offering advanced poses for seasoned practitioners. 
-            Her approach combines mindfulness, breath control, and strength-building techniques.
-          </p>
+
+        <!-- Contact Details -->
+        <div class="contact-details">
+          <h3>Contact Details</h3>
+          <p><strong>Email:</strong> <br> abc@gmail.com</p>
+          <p><strong>Contact No.:</strong> <br> 1234567890</p>
+          <p><strong>Address:</strong> <br> 123 Harmony Lane, Suite 4B<br>Melodyville, State 56789<br>Country</p>
         </div>
-        <p><strong>Date of Birth:</strong> September 24, 1995</p>
       </div>
 
-      <!-- Contact Details -->
-      <div class="contact-details">
-        <h3>Contact Details</h3>
-        <p><strong>Email:</strong> abc@gmail.com</p>
-        <p><strong>Contact No.:</strong> 1234567890</p>
-        <p><strong>Address:</strong> 123 Harmony Lane, Suite 4B<br>Melodyville, State 56789<br>Country</p>
-      </div>
-    </div>
-
-    <!-- Footer Section -->
-    <div class="footer">
-      <button>Back to Staff/Trainers</button>
+      
     </div>
   </div>
 </body>
